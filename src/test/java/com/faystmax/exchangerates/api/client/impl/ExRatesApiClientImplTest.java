@@ -10,12 +10,12 @@ public class ExRatesApiClientImplTest {
     private static ExRatesApiClientImpl apiClient;
 
     @BeforeAll
-    static void setUp() {
+    public static void setUp() {
         apiClient = new ExRatesApiClientImpl(true);
     }
 
     @Test
-    public void getLatestRates_baseEquals() {
+    public void getLatestRatesBaseEquals() {
         var latestRates = apiClient.getLatestRates(RateBase.USD);
         assertEquals(latestRates.base, RateBase.USD);
     }
