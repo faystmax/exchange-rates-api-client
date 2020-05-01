@@ -11,7 +11,7 @@ public class ExRatesApiClientImplTest {
 
     @BeforeAll
     static void setUp() {
-        apiClient = new ExRatesApiClientImpl();
+        apiClient = new ExRatesApiClientImpl(true);
     }
 
     @Test
