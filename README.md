@@ -1,6 +1,6 @@
 # Exchange Rates Java Api Client
 
-Unofficial Java Api client for "https://exchangeratesapi.io/" made with Retrofit 2.0
+Unofficial Java Api Client for "https://exchangeratesapi.io/" made with Retrofit 2.7
 
 ## Build
 
