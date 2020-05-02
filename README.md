@@ -1,16 +1,24 @@
 # Exchange Rates Java Api Client
 
-Unofficial Java Api Client for <https://exchangeratesapi.io/> made with Retrofit 2.7
-
+[![Build](https://github.com/faystmax/exchange-rates-api-client/workflows/Build/badge.svg?branch=master)](https://github.com/faystmax/exchange-rates-api-client/actions?query=workflow%3A%22Java+CI%22)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8b3988dc0d7e4bb381fd6dabcb381999)](https://www.codacy.com/manual/faystmax/exchange-rates-api-client?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=faystmax/exchange-rates-api-client&amp;utm_campaign=Badge_Grade)
+[![GitHub license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/faystmax/exchange-rates-api-client/blob/master/LICENSE.md)
+
+Unofficial Java Api Client for <https://exchangeratesapi.io/> made with Retrofit 2.7
 
 ## Usage
 
 TODO
 
 ## Build
-
-TODO
+To build this project run this from base directory:
+```
+./gradlew clean build
+```
+For windows users:
+```
+gradlew.bat clean build
+```
 
 ## License
 
