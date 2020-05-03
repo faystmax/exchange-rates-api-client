@@ -5,7 +5,7 @@ import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
-public enum RateBase {
+public enum Currency {
     CAD("CAD"),
     HKD("HKD"),
     ISK("ISK"),
@@ -40,5 +40,5 @@ public enum RateBase {
     MYR("MYR"),
     EUR("EUR");
 
-    private final String base;
+    private final String name;
 }

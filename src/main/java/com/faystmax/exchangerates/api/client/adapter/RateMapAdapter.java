@@ -1,6 +1,6 @@
 package com.faystmax.exchangerates.api.client.adapter;
 
-import com.faystmax.exchangerates.api.client.domain.RateBase;
+import com.faystmax.exchangerates.api.client.domain.Currency;
 import com.google.gson.TypeAdapter;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
@@ -10,18 +10,18 @@ import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
 
-public class RateMapAdapter extends TypeAdapter<Map<RateBase, BigDecimal>> {
+public class RateMapAdapter extends TypeAdapter<Map<Currency, BigDecimal>> {
     @Override
-    public void write(JsonWriter writer, Map<RateBase, BigDecimal> rates) {
+    public void write(JsonWriter writer, Map<Currency, BigDecimal> rates) {
         throw new UnsupportedOperationException();
     }
 
     @Override
-    public Map<RateBase, BigDecimal> read(JsonReader reader) throws IOException {
-        Map<RateBase, BigDecimal> rates = new HashMap<>();
+    public Map<Currency, BigDecimal> read(JsonReader reader) throws IOException {
+        Map<Currency, BigDecimal> rates = new HashMap<>();
         reader.beginObject();
         while (reader.hasNext()) {
-            rates.put(RateBase.valueOf(reader.nextName()), new BigDecimal(reader.nextString()));
+            rates.put(Currency.valueOf(reader.nextName()), new BigDecimal(reader.nextString()));
         }
         reader.endObject();
         return rates;

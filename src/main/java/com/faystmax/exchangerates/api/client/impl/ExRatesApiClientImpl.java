@@ -2,8 +2,8 @@ package com.faystmax.exchangerates.api.client.impl;
 
 import com.faystmax.exchangerates.api.client.ExRatesApi;
 import com.faystmax.exchangerates.api.client.ExRatesApiClient;
-import com.faystmax.exchangerates.api.client.domain.ExRatesInfo;
-import com.faystmax.exchangerates.api.client.domain.RateBase;
+import com.faystmax.exchangerates.api.client.domain.Currency;
+import com.faystmax.exchangerates.api.client.domain.ExchangeRates;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Call;
@@ -37,7 +37,7 @@ public class ExRatesApiClientImpl implements ExRatesApiClient {
     }
 
     @Override
-    public ExRatesInfo getLatestRates(RateBase base) {
+    public ExchangeRates getLatestRates(Currency base) {
         return execute(api.getLatestRates(base));
     }
 

@@ -5,12 +5,14 @@ import com.google.gson.annotations.JsonAdapter;
 import lombok.Data;
 
 import java.math.BigDecimal;
-import java.util.*;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 @Data
-public class ExRatesInfo {
+public class ExchangeRates {
     public Date date;
-    public RateBase base;
+    public Currency base;
     @JsonAdapter(RateMapAdapter.class)
-    public Map<RateBase, BigDecimal> rates = new HashMap<>();
+    public Map<Currency, BigDecimal> rates = new HashMap<>();
 }

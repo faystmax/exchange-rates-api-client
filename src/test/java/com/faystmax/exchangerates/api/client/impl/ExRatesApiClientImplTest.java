@@ -1,6 +1,6 @@
 package com.faystmax.exchangerates.api.client.impl;
 
-import com.faystmax.exchangerates.api.client.domain.RateBase;
+import com.faystmax.exchangerates.api.client.domain.Currency;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -16,7 +16,7 @@ public class ExRatesApiClientImplTest {
 
     @Test
     public void getLatestRatesBaseEquals() {
-        var latestRates = apiClient.getLatestRates(RateBase.USD);
-        assertEquals(latestRates.base, RateBase.USD);
+        var latestRates = apiClient.getLatestRates(Currency.USD);
+        assertEquals(latestRates.base, Currency.USD);
     }
 }
