@@ -28,11 +28,11 @@ dependencies {
 ```
 ## Build
 To build this project run this from base directory:
-```
+```cmd
 ./gradlew clean build
 ```
 For windows users:
-```
+```cmd
 gradlew.bat clean build
 ```
 
