@@ -1,6 +1,6 @@
 package com.faystmax.exchangerates.api.client.domain;
 
-import com.faystmax.exchangerates.api.client.adapter.RateMapAdapter;
+import com.faystmax.exchangerates.api.client.adapter.RatesMapAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import lombok.Data;
 
@@ -13,6 +13,6 @@ import java.util.Map;
 public class ExchangeRates {
     public Date date;
     public Currency base;
-    @JsonAdapter(RateMapAdapter.class)
+    @JsonAdapter(RatesMapAdapter.class)
     public Map<Currency, BigDecimal> rates = new HashMap<>();
 }

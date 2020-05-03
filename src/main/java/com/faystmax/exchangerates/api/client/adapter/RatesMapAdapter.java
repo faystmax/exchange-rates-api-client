@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
 
-public class RateMapAdapter extends TypeAdapter<Map<Currency, BigDecimal>> {
+public class RatesMapAdapter extends TypeAdapter<Map<Currency, BigDecimal>> {
     @Override
     public void write(JsonWriter writer, Map<Currency, BigDecimal> rates) {
         throw new UnsupportedOperationException();

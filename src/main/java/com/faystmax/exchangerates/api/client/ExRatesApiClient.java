@@ -5,7 +5,7 @@ import com.faystmax.exchangerates.api.client.domain.ExchangeRates;
 
 public interface ExRatesApiClient {
     /**
-     * @param base exchange base
+     * @param base base exchange currency
      * @return latest rates info
      */
     ExchangeRates getLatestRates(Currency base);
