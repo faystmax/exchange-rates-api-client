@@ -23,7 +23,7 @@ allprojects {
 Add dependency
 ```groovy
 dependencies {
-    implementation 'com.github.faystmax:exchange-rates-api-client:v1.0.1'
+    implementation 'com.github.faystmax:exchange-rates-api-client:1.1.0'
 }
 ```
 ## Build
